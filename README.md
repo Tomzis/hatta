@@ -15,14 +15,13 @@ W folderze głównym wpisujemy komendę `npm i`
 # Struktura katologów
 
 ```
-Tomkan/             # → Główny folder projektu
+Hatta/             # → Główny folder projektu
 ├── index.html/     # → Główny plik HTML
 ├── fav.png         # → Plik do wygenerowania favicony
 └── src/            # → Bazowy folder roboczy
     ├── img/        # → Zdjęcia
     ├── js/         # → Pliki JS
     └── scss/       # → Pliki SCSS
-├── php/            # → Pliki PHP
 └── dist            # → Katalog z wygenerowaną stroną
 ```
 
