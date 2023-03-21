@@ -1,0 +1,30 @@
+.about {
+  display: flex;
+  height: 100vh;
+
+  &__content {
+    width: 50%;
+    margin: auto 0;
+    display: grid;
+    gap: 5rem 0;
+
+    &--wrapper {
+      padding: 0 10rem;
+      display: grid;
+      gap: 2rem 0;
+    }
+    &--box {
+      border: solid black;
+      border-width: 4px 0;
+      padding: 6rem 10rem;
+      display: grid;
+      gap: 3rem 0;
+    }
+  }
+  &__background {
+    width: 50%;
+    background-image: url(../img/aboutimg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

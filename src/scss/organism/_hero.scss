@@ -1,0 +1,21 @@
+.hero {
+  display: flex;
+  height: 100vh;
+
+  &__content {
+    width: 55%;
+    text-align: right;
+    margin: auto 0;
+    padding-right: 5rem;
+    display: grid;
+    gap: 4rem 0;
+    justify-items: end;
+  }
+  &__background {
+    width: 45%;
+    background-image: url(../img/indeximg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

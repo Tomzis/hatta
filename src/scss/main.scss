@@ -1,4 +1,15 @@
+@import "~bootstrap/scss/bootstrap";
 @import "variables";
 @import "global";
 @import "fonts";
 @import "typography";
+
+@import "atoms/button";
+
+@import "molecules/nav";
+
+@import "organism/hero";
+@import "organism/about";
+@import "organism/articles";
+@import "organism/gallery";
+@import "organism/contact";
