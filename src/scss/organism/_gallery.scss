@@ -1,0 +1,42 @@
+.gallery {
+  padding: 10rem 10rem 0;
+  &--wrapper {
+    display: grid;
+    gap: 2rem 0;
+    margin-bottom: 2rem;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 7rem 0;
+    justify-content: space-between;
+
+    &--img {
+      width: 57rem;
+      height: 28rem;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--img1 {
+      background-image: url(../img/gallery1.png);
+    }
+    &--img2 {
+      background-image: url(../img/gallery2.png);
+    }
+    &--img3 {
+      background-image: url(../img/gallery3.png);
+    }
+    &--img4 {
+      background-image: url(../img/gallery4.png);
+    }
+    &--img5 {
+      background-image: url(../img/gallery5.png);
+    }
+    &--img6 {
+      background-image: url(../img/gallery6.png);
+    }
+  }
+}
