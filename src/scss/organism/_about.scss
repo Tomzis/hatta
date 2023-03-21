@@ -10,6 +10,8 @@
 
     &--wrapper {
       padding: 0 10rem;
+      display: grid;
+      gap: 2rem 0;
     }
     &--box {
       border: solid black;
