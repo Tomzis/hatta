@@ -1,6 +1,9 @@
 .about {
   display: flex;
   height: 100%;
+  @media (min-height: 700px) {
+    height: 100vh;
+  }
 
   &__content {
     margin: 0;

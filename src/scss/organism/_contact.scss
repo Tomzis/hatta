@@ -1,7 +1,9 @@
 .contact {
-  padding: 10rem 10rem;
-  height: 100vh;
+  padding: 8rem 5rem 6rem;
 
+  @media (min-width: 600px) {
+    padding: 10rem 10rem;
+  }
   &--wrapper {
     display: grid;
     gap: 2rem 0;
@@ -53,15 +55,25 @@
         gap: 1rem 0;
 
         input {
-          width: 35rem;
+          width: 25rem;
           height: 4rem;
           border: 2px solid black;
+          @media (min-width: 520px) {
+            width: 35rem;
+          }
         }
         textarea {
-          width: 60rem;
+          width: 30rem;
           height: 15rem;
           border: 2px solid black;
           resize: none;
+
+          @media (min-width: 520px) {
+            width: 45rem;
+          }
+          @media (min-width: 800px) {
+            width: 60rem;
+          }
         }
       }
     }
