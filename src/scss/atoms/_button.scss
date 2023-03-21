@@ -6,10 +6,10 @@ button {
   font-weight: 700;
   font-size: 1.5rem;
   transition: 0.2s;
+  border: 2px solid black;
 
   &:hover {
     background-color: transparent;
-    border: 2px solid black;
     color: #000;
   }
 }

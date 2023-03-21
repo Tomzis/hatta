@@ -3,19 +3,32 @@
   height: 100vh;
 
   &__content {
-    width: 55%;
-    text-align: right;
-    margin: auto 0;
-    padding-right: 5rem;
     display: grid;
     gap: 4rem 0;
-    justify-items: end;
+    text-align: center;
+    width: 100%;
+    justify-items: center;
+    margin: 15rem 0;
+
+    @media (min-height: 700px) {
+      margin: auto 0;
+    }
+    @media (min-width: 768px) {
+      width: 55%;
+      text-align: right;
+      padding-right: 5rem;
+      justify-items: end;
+    }
   }
   &__background {
-    width: 45%;
-    background-image: url(../img/indeximg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      width: 45%;
+      background-image: url(../img/indeximg.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
 }

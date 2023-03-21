@@ -1,0 +1,35 @@
+.hamburger {
+  display: block;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+
+  @media (min-width: 600px) {
+    display: none;
+  }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000;
+  }
+  &.active {
+    .bar:nth-child(2) {
+      background-color: #000;
+      opacity: 0;
+    }
+    .bar:nth-child(1) {
+      background-color: #000;
+      transform: translateY(8px) rotate(45deg);
+    }
+    .bar:nth-child(3) {
+      background-color: #000;
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+}
