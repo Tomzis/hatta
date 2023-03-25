@@ -25,6 +25,10 @@
   }
   &__background {
     display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
     @media (min-width: 768px) {
       display: block;
       width: 45%;
