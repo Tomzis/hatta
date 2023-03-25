@@ -1,13 +1,11 @@
 {
-  "name": "webpack2",
+  "name": "hatta",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --open --config webpack.config.js",
-    "build": "webpack",
-    "build:watch": "webpack --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack.prod.js",
+    "build:watch": "webpack --watch"
   },
   "keywords": [],
   "author": "",

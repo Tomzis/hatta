@@ -1,0 +1,57 @@
+.article {
+  position: relative;
+  overflow: hidden;
+  height: 18vw;
+  width: 100%;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  &__label {
+    background-color: #000;
+    width: 80%;
+    height: 30%;
+    position: absolute;
+    bottom: 2rem;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+
+    p {
+      color: white;
+      font-weight: 600;
+      line-height: 100%;
+      font-size: 1.5rem;
+      @media (min-width: 430px) {
+        font-size: 2rem;
+      }
+
+      @media (min-width: 1800px) {
+        font-size: 2.5rem;
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &:hover {
+    .article {
+      &__bg {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
