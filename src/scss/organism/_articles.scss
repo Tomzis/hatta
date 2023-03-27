@@ -1,9 +1,12 @@
 .articles {
-  padding: 10rem 5rem;
-  @media (min-width: 1200px) {
-    padding: 10rem 10rem;
-  }
+  padding: 8rem 5rem 6rem;
 
+  @media (min-width: 650px) {
+    padding: 10rem;
+  }
+  @media (min-width: 1500px) {
+    padding: 10rem 10rem 0;
+  }
   &--wrapper {
     display: grid;
     gap: 2rem 0;
