@@ -16,94 +16,29 @@
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(1, auto);
-    gap: 7rem 0;
-    justify-content: space-between;
+    gap: 3rem;
+    grid-template-columns: repeat(1, 1fr);
 
-    @media (min-width: 1050px) {
-      grid-template-columns: repeat(2, auto);
+    @media (min-width: 800px) {
+      grid-template-columns: repeat(2, 1fr);
     }
-    @media (min-width: 1500px) {
-      grid-template-columns: repeat(3, auto);
+    @media (min-width: 1100px) {
+      grid-template-columns: repeat(3, 1fr);
     }
     &--img {
-      width: 30rem;
-      height: 15rem;
-      background-size: cover;
-      background-position: center;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 60vh;
+
       background-repeat: no-repeat;
-
-      @media (min-width: 430px) {
-        width: 35rem;
-        height: 17.5rem;
+      background-size: cover;
+      @media (min-width: 800px) {
+        height: 15vw;
       }
-      @media (min-width: 480px) {
-        width: 40rem;
-        height: 20rem;
+      @media (min-height: 700px) {
+        height: 30vh;
       }
-      @media (min-width: 550px) {
-        width: 45rem;
-        height: 22.5rem;
-      }
-      @media (min-width: 650px) {
-        width: 50rem;
-        height: 25rem;
-      }
-      @media (min-width: 750px) {
-        width: 55rem;
-        height: 27.5rem;
-      }
-      @media (min-width: 1050px) {
-        width: 40rem;
-        height: 20rem;
-      }
-      @media (min-width: 1250px) {
-        width: 45rem;
-        height: 22.5rem;
-      }
-      @media (min-width: 1250px) {
-        width: 50rem;
-        height: 25rem;
-      }
-      @media (min-width: 1350px) {
-        width: 55rem;
-        height: 27.5rem;
-      }
-      @media (min-width: 1500px) {
-        width: 40rem;
-        height: 20rem;
-      }
-      @media (min-width: 1650px) {
-        width: 45rem;
-        height: 22.5rem;
-      }
-      @media (min-width: 1800px) {
-        width: 50rem;
-        height: 25rem;
-      }
-      @media (min-width: 1900px) {
-        width: 55rem;
-        height: 27.5rem;
-      }
-    }
-
-    &--img1 {
-      background-image: url(../img/gallery1.png);
-    }
-    &--img2 {
-      background-image: url(../img/gallery2.png);
-    }
-    &--img3 {
-      background-image: url(../img/gallery3.png);
-    }
-    &--img4 {
-      background-image: url(../img/gallery4.png);
-    }
-    &--img5 {
-      background-image: url(../img/gallery5.png);
-    }
-    &--img6 {
-      background-image: url(../img/gallery6.png);
     }
   }
 }
