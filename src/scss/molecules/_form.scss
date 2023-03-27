@@ -1,0 +1,36 @@
+.form {
+  &__title {
+    display: flex;
+    gap: 0 2rem;
+
+    li {
+      font-size: 1.5rem;
+      position: relative;
+
+      &::after {
+        content: "|";
+        position: absolute;
+        right: -1rem;
+        text-shadow: none;
+      }
+
+      a {
+        transition: text-shadow 0.3s;
+        cursor: pointer;
+        font-weight: 500;
+
+        &.active,
+        &:hover {
+          color: #000;
+          text-shadow: 0 0 0.5px #000000, 0 0 0.5px #000000, 0 0 0.5px #000000;
+        }
+      }
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

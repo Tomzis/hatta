@@ -1,5 +1,13 @@
 .gallery {
-  padding: 10rem 10rem 0;
+  padding: 8rem 5rem 6rem;
+
+  @media (min-width: 650px) {
+    padding: 10rem;
+  }
+  @media (min-width: 1500px) {
+    padding: 10rem 10rem 0;
+  }
+
   &--wrapper {
     display: grid;
     gap: 2rem 0;
@@ -8,16 +16,75 @@
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(1, auto);
     gap: 7rem 0;
     justify-content: space-between;
 
+    @media (min-width: 1050px) {
+      grid-template-columns: repeat(2, auto);
+    }
+    @media (min-width: 1500px) {
+      grid-template-columns: repeat(3, auto);
+    }
     &--img {
-      width: 57rem;
-      height: 28rem;
+      width: 30rem;
+      height: 15rem;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+
+      @media (min-width: 430px) {
+        width: 35rem;
+        height: 17.5rem;
+      }
+      @media (min-width: 480px) {
+        width: 40rem;
+        height: 20rem;
+      }
+      @media (min-width: 550px) {
+        width: 45rem;
+        height: 22.5rem;
+      }
+      @media (min-width: 650px) {
+        width: 50rem;
+        height: 25rem;
+      }
+      @media (min-width: 750px) {
+        width: 55rem;
+        height: 27.5rem;
+      }
+      @media (min-width: 1050px) {
+        width: 40rem;
+        height: 20rem;
+      }
+      @media (min-width: 1250px) {
+        width: 45rem;
+        height: 22.5rem;
+      }
+      @media (min-width: 1250px) {
+        width: 50rem;
+        height: 25rem;
+      }
+      @media (min-width: 1350px) {
+        width: 55rem;
+        height: 27.5rem;
+      }
+      @media (min-width: 1500px) {
+        width: 40rem;
+        height: 20rem;
+      }
+      @media (min-width: 1650px) {
+        width: 45rem;
+        height: 22.5rem;
+      }
+      @media (min-width: 1800px) {
+        width: 50rem;
+        height: 25rem;
+      }
+      @media (min-width: 1900px) {
+        width: 55rem;
+        height: 27.5rem;
+      }
     }
 
     &--img1 {

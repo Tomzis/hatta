@@ -3,11 +3,12 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: "./index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "main.js",
+    filename: "app.[contenthash].js",
+    clean: true,
   },
   module: {
     rules: [
@@ -33,15 +34,7 @@ module.exports = {
       template: "./contact.html",
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
+      filename: "[name].[contenthash].css",
     }),
   ],
-  devServer: {
-    compress: true,
-    host: "localhost",
-    port: 9000,
-    static: {
-      directory: path.join(__dirname, "./"),
-    },
-  },
 };

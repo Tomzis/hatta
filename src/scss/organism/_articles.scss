@@ -1,5 +1,8 @@
 .articles {
-  padding: 10rem 10rem 0;
+  padding: 10rem 5rem;
+  @media (min-width: 1200px) {
+    padding: 10rem 10rem;
+  }
 
   &--wrapper {
     display: grid;
@@ -9,66 +12,14 @@
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 7rem 0;
-    justify-content: space-between;
+    gap: 3rem;
+    grid-template-columns: repeat(1, 1fr);
 
-    &--article {
-      width: 55rem;
-      height: 27.5rem;
-      background-position: center;
-      background-size: cover;
-      position: relative;
-      cursor: pointer;
-      transition: 0.2s;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-      &:hover .label {
-        background: #00000080;
-      }
-      .label {
-        background-color: #000;
-        width: 80%;
-        height: 30%;
-        position: absolute;
-        bottom: 2rem;
-        padding: 0 2rem;
-        display: flex;
-        align-items: center;
-        transition: 0.2s;
-
-        p {
-          color: white;
-          font-weight: 600;
-          line-height: 100%;
-
-          span {
-            font-weight: 400;
-            font-size: 1.5rem;
-          }
-        }
-      }
+    @media (min-width: 800px) {
+      grid-template-columns: repeat(2, 1fr);
     }
-
-    &--article1 {
-      background-image: url(../img/articles1.jpg);
-    }
-    &--article2 {
-      background-image: url(../img/articles2.jpg);
-    }
-    &--article3 {
-      background-image: url(../img/articles3.jpg);
-    }
-    &--article4 {
-      background-image: url(../img/articles4.jpg);
-    }
-    &--article5 {
-      background-image: url(../img/articles5.jpg);
-    }
-    &--article6 {
-      background-image: url(../img/articles6.jpg);
+    @media (min-width: 1100px) {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
