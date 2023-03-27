@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "production",
@@ -20,11 +21,29 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({ filename: "index.html", template: "./index.html" }),
-    new HtmlWebpackPlugin({ filename: "./about/index.html", template: "./about/index.html" }),
-    new HtmlWebpackPlugin({ filename: "./articles/index.html", template: "./articles/index.html" }),
-    new HtmlWebpackPlugin({ filename: "./gallery/index.html", template: "./gallery/index.html" }),
-    new HtmlWebpackPlugin({ filename: "./contact/index.html", template: "./contact/index.html" }),
+    new HtmlWebpackPlugin({
+      filename: "./about/index.html",
+      template: "./about/index.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "./articles/index.html",
+      template: "./articles/index.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "./gallery/index.html",
+      template: "./gallery/index.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "./contact/index.html",
+      template: "./contact/index.html",
+    }),
     new HtmlWebpackPlugin({ filename: "error.html", template: "./error.html" }),
     new MiniCssExtractPlugin({ filename: "[name].[contenthash].css" }),
+    new CopyPlugin({
+      patterns: [
+        { from: "./favicon", to: "favicon" },
+        { from: "./src/img", to: "img" },
+      ],
+    }),
   ],
 };
