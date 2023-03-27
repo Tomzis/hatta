@@ -20,21 +20,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({ filename: "index.html", template: "./index.html" }),
-    new HtmlWebpackPlugin({ filename: "about.html", template: "./about.html" }),
-    new HtmlWebpackPlugin({
-      filename: "articles.html",
-      template: "./articles.html",
-    }),
-    new HtmlWebpackPlugin({
-      filename: "gallery.html",
-      template: "./gallery.html",
-    }),
-    new HtmlWebpackPlugin({
-      filename: "contact.html",
-      template: "./contact.html",
-    }),
-    new MiniCssExtractPlugin({
-      filename: "[name].[contenthash].css",
-    }),
+    new HtmlWebpackPlugin({ filename: "./about/index.html", template: "./about/index.html" }),
+    new HtmlWebpackPlugin({ filename: "./articles/index.html", template: "./articles/index.html" }),
+    new HtmlWebpackPlugin({ filename: "./gallery/index.html", template: "./gallery/index.html" }),
+    new HtmlWebpackPlugin({ filename: "./contact/index.html", template: "./contact/index.html" }),
+    new HtmlWebpackPlugin({ filename: "error.html", template: "./error.html" }),
+    new MiniCssExtractPlugin({ filename: "[name].[contenthash].css" }),
   ],
 };
