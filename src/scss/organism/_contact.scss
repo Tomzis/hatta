@@ -2,7 +2,7 @@
   padding: 8rem 5rem 6rem;
 
   @media (min-width: 600px) {
-    padding: 10rem 10rem;
+    padding: 10rem 10rem 0rem;
   }
   &--wrapper {
     display: grid;
@@ -18,7 +18,7 @@
     form {
       display: flex;
       flex-direction: column;
-      gap: 3rem 0;
+      gap: 2rem 0;
       margin-top: 2rem;
 
       label {
